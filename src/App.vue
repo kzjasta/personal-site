@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Landing></Landing>
     <router-view></router-view>
   </div>
 </template>
@@ -11,4 +10,22 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss">
+html * {
+  font-family: "Karla-Bold";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Karla-Bold";
+}
+
+p {
+  font-family: "Karla-Bold";
+  color: $grey-dark;
+}
+</style>

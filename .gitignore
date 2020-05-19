@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+# Placeholder images
+/src/assets/img
+
 # local env files
 .env.local
 .env.*.local
