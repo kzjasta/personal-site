@@ -1,31 +1,23 @@
 <template>
   <div id="app">
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+        <NavBar></NavBar>
+      </div>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import NavBar from "@/components/NavBar";
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    NavBar
+  }
 };
 </script>
 
-<style lang="scss">
-html * {
-  font-family: "Karla-Bold";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Karla-Bold";
-}
-
-p {
-  font-family: "Karla-Bold";
-  color: $grey-dark;
-}
-</style>
+<style lang="scss"></style>

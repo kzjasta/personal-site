@@ -1,0 +1,23 @@
+@import '~bulma/bulma';
+
+html * {
+  font-family: "Asap-Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Asap-Bold";
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: $grey-lighter;
+  height: 1px;
+}
