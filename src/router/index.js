@@ -2,11 +2,11 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 // Views
-import Landing from "../views/Landing.vue";
-import About from "../views/About.vue";
-import Travel from "../views/Travel.vue";
-import Writing from "../views/Writing.vue";
-import Projects from "../views/Projects.vue";
+import Landing from "@/views/Landing.vue";
+import About from "@/views/About.vue";
+import Travel from "@/views/Travel.vue";
+import Writing from "@/views/Writing.vue";
+import Projects from "@/views/Projects.vue";
 
 Vue.use(VueRouter);
 

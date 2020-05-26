@@ -3,8 +3,8 @@ module.exports = {
     loaderOptions: {
       sass: {
         prependData: `
-        @import "@/assets/styles/main";
         @import "~bulma/bulma";
+        @import "@/assets/styles/main.scss";
         `
       }
     }

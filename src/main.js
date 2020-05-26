@@ -6,6 +6,7 @@ import store from "./store";
 // Bulma
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
+import "@/assets/styles/main.scss";
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;

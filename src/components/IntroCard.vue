@@ -66,17 +66,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.platform {
-  margin-top: 20%;
-  margin-bottom: 5%;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.platform h5 {
-  color: $grey;
-}
-
 .platform img {
   border-radius: 5%;
 }
