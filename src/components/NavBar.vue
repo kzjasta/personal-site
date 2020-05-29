@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar fixed-top is-transparent">
     <div class="navbar-brand">
       <router-link class="navbar-item" :to="{ name: 'Landing'}">Kieran Small</router-link>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -11,7 +11,6 @@
     <div class="navbar-menu">
       <div class="navbar-end">
         <router-link class="navbar-item has-text-centered" :to="{ name: 'About' }">About</router-link>
-        <router-link class="navbar-item has-text-centered" :to="{ name: 'Writing'}">Writing</router-link>
         <router-link class="navbar-item has-text-centered" :to="{ name: 'Travel'}">Travel</router-link>
         <router-link class="navbar-item has-text-centered" :to="{ name: 'Projects'}">Projects</router-link>
       </div>

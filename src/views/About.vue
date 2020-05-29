@@ -4,7 +4,7 @@
       <div class="column is-half is-offset-one-quarter">
         <article class="platform content">
           <header>
-            <h1 class="title">About me:</h1>
+            <h1 class="title">About me</h1>
           </header>
           <p>
             I'm a web developer and I try to spend as much time as I can
@@ -16,12 +16,12 @@
             tools that make maintaining digital assets and mobile games a little
             easier.
           </p>
-          <h1 class="title">Factoids:</h1>
+          <h1 class="title">Factoids</h1>
           <div class="factoids">
             <p class="subtitle">Kieran...</p>
             <ul>
               <li>works as a web developer.</li>
-              <li>has visited X countries.</li>
+              <li>has visited 32 countries.</li>
               <li>plays volleyball.</li>
               <li>can speak Portuguese.</li>
               <li>loves video games.</li>
@@ -42,6 +42,7 @@ export default {};
 .factoids {
   margin-top: 20px;
 }
+
 hr {
   background-color: $grey-lighter;
   margin: auto;
