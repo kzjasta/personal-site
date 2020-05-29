@@ -2,14 +2,16 @@
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <div class="tile is-child">
-        <inline-svg
-          class="flag-icon"
-          :key="country"
-          v-for="country in countries"
-          :src="require(`@/assets/icons/flags/${country}.svg`)"
-          height="75"
-          width="75"
-        ></inline-svg>
+        <sequential-entrance delay="50">
+          <inline-svg
+            class="flag-icon"
+            :key="country"
+            v-for="country in countries"
+            :src="require(`@/assets/icons/flags/${country}.svg`)"
+            height="75"
+            width="75"
+          ></inline-svg>
+        </sequential-entrance>
       </div>
     </div>
   </div>
