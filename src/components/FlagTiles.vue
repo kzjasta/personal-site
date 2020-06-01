@@ -1,19 +1,16 @@
 <template>
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <div class="tile is-child">
-        <sequential-entrance delay="50">
-          <inline-svg
-            class="flag-icon"
-            :key="country"
-            v-for="country in countries"
-            :src="require(`@/assets/icons/flags/${country}.svg`)"
-            height="75"
-            width="75"
-          ></inline-svg>
-        </sequential-entrance>
-      </div>
-    </div>
+  <div class="tile is-child content">
+    <p class="title is-size-4">This is where I've been...</p>
+    <sequential-entrance fromRight delay="50">
+      <a href="#" :key="country" v-for="country in countries">
+        <inline-svg
+          class="flag-icon hvr-grow"
+          :src="require(`@/assets/icons/flags/${country}.svg`)"
+          :height="iconSize"
+          :width="iconSize"
+        ></inline-svg>
+      </a>
+    </sequential-entrance>
   </div>
 </template>
 
@@ -25,6 +22,7 @@ export default {
   },
   data() {
     return {
+      iconSize: 45,
       countries: [
         "belgium",
         "bosnia",
@@ -66,6 +64,6 @@ export default {
 
 <style lang="scss" scoped>
 .flag-icon {
-  margin-right: 10px;
+  margin: 5px;
 }
 </style>
