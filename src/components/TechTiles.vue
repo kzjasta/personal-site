@@ -1,8 +1,8 @@
 <template>
   <div class="tile is-child content">
     <p class="title is-size-4">...and this is the tech I use.</p>
-    <sequential-entrance fromTop delay="100">
-      <a :href="tech.url" :key="tech" v-for="tech in technologies">
+    <sequential-entrance fromTop delay="150">
+      <a :href="tech.url" :key="tech" target="_blank" v-for="tech in technologies">
         <inline-svg
           class="tech-icon hvr-grow"
           :src="require(`@/assets/icons/tech/${tech.name}.svg`)"
@@ -38,7 +38,9 @@ export default {
         { name: "mongo", url: "https://www.mongodb.com/" },
         { name: "sass", url: "https://sass-lang.com/" },
         { name: "bulma", url: "https://bulma.io/" },
-        { name: "tailwind", url: "https://tailwindcss.com/" }
+        { name: "tailwind", url: "https://tailwindcss.com/" },
+        { name: "sketch", url: "https://www.sketch.com/" },
+        { name: "balsamiq", url: "https://balsamiq.com/" }
       ]
     };
   }
