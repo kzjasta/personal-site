@@ -10,10 +10,12 @@
 
 <script>
 import IntroCard from "@/components/IntroCard";
+
 export default {
   components: {
     IntroCard
-  }
+  },
+  title: "Kieran Small"
 };
 </script>
 

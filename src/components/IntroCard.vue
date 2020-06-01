@@ -12,40 +12,42 @@
                   <span class="saltire">Scotland</span>.
                 </strong>
               </p>
-              <a href="#">
-                <inline-svg
-                  class="social-media-icon"
-                  :src="require('@/assets/icons/cv.svg')"
-                  height="25"
-                  width="25"
-                ></inline-svg>
-              </a>
-              <a href="https://github.com/kzjasta">
-                <inline-svg
-                  class="social-media-icon"
-                  :src="require('@/assets/icons/github.svg')"
-                  height="25"
-                  width="25"
-                ></inline-svg>
-              </a>
-              <a href="https://instagram.com/smallkieran/">
-                <inline-svg
-                  class="social-media-icon"
-                  :src="require('@/assets/icons/instagram.svg')"
-                  height="25"
-                  width="25"
-                ></inline-svg>
-              </a>
-              <a href="https://www.linkedin.com/in/kieran-small-8b1b0a137/">
-                <inline-svg
-                  class="social-media-icon"
-                  :src="require('@/assets/icons/linkedin.svg')"
-                  height="25"
-                  width="25"
-                ></inline-svg>
-              </a>
+              <div class="social-media">
+                <a href="#">
+                  <inline-svg
+                    class="social-media-icon"
+                    :src="require('@/assets/icons/cv.svg')"
+                    height="25"
+                    width="25"
+                  ></inline-svg>
+                </a>
+                <a href="https://github.com/kzjasta">
+                  <inline-svg
+                    class="social-media-icon"
+                    :src="require('@/assets/icons/github.svg')"
+                    height="25"
+                    width="25"
+                  ></inline-svg>
+                </a>
+                <a href="https://instagram.com/smallkieran/">
+                  <inline-svg
+                    class="social-media-icon"
+                    :src="require('@/assets/icons/instagram.svg')"
+                    height="25"
+                    width="25"
+                  ></inline-svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kieran-small-8b1b0a137/">
+                  <inline-svg
+                    class="social-media-icon"
+                    :src="require('@/assets/icons/linkedin.svg')"
+                    height="25"
+                    width="25"
+                  ></inline-svg>
+                </a>
+              </div>
             </div>
-            <div class="tile is-child">
+            <div class="is-hidden-mobile tile is-child">
               <img class="avatar" src="@/assets/img/me.png" />
             </div>
           </div>
@@ -78,8 +80,16 @@ export default {
   border-radius: 2%;
 }
 
+.flag-tiles {
+  padding-bottom: 2%;
+}
+
 .saltire {
   color: $link;
+}
+
+.social-media {
+  margin-bottom: 2%;
 }
 
 .social-media-icon {

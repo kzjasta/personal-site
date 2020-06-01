@@ -3,6 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+// Title Mixin
+import titleMixin from "@/mixins/titleMixin";
+Vue.mixin(titleMixin);
+
 // Vue Sequential Entrance Animations
 import SequentialEntrance from "vue-sequential-entrance";
 import "vue-sequential-entrance/vue-sequential-entrance.css";
