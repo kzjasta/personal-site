@@ -1,58 +1,68 @@
 <template>
   <div>
-    <div class="platform">
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical">
-          <div class="tile is-parent">
-            <div class="tile is-child">
-              <h1 class="title">Hi, I'm Kieran</h1>
-              <p class="subtitle">
-                I'm a web developer and intrepid traveller based in
-                <strong>
-                  <span class="saltire">Scotland</span>.
-                </strong>
-              </p>
-              <div class="social-media">
-                <a href="#">
-                  <inline-svg
-                    class="social-media-icon"
-                    :src="require('@/assets/icons/cv.svg')"
-                    height="25"
-                    width="25"
-                  ></inline-svg>
-                </a>
-                <a href="https://github.com/kzjasta">
-                  <inline-svg
-                    class="social-media-icon"
-                    :src="require('@/assets/icons/github.svg')"
-                    height="25"
-                    width="25"
-                  ></inline-svg>
-                </a>
-                <a href="https://instagram.com/smallkieran/">
-                  <inline-svg
-                    class="social-media-icon"
-                    :src="require('@/assets/icons/instagram.svg')"
-                    height="25"
-                    width="25"
-                  ></inline-svg>
-                </a>
-                <a href="https://www.linkedin.com/in/kieran-small-8b1b0a137/">
-                  <inline-svg
-                    class="social-media-icon"
-                    :src="require('@/assets/icons/linkedin.svg')"
-                    height="25"
-                    width="25"
-                  ></inline-svg>
-                </a>
-              </div>
-            </div>
-            <div class="is-hidden-mobile tile is-child">
-              <img class="avatar" src="@/assets/img/me.png" />
+    <div class="columns platform">
+      <div class="column is-half is-two-thirds-tablet is-offset-one-quarter">
+        <div class="columns">
+          <div class="column is-half">
+            <h1 class="title">Hi, I'm Kieran</h1>
+            <p class="subtitle is-size-4-mobile">
+              I'm a web developer and intrepid traveller based in
+              <strong>
+                <span class="saltire">Scotland</span>.
+              </strong>
+            </p>
+            <div class="social-media">
+              <a href="#">
+                <inline-svg
+                  class="social-media-icon hvr-grow"
+                  :src="require('@/assets/icons/cv.svg')"
+                  height="25"
+                  width="25"
+                ></inline-svg>
+              </a>
+              <a href="mailto:me@ksmall.co">
+                <inline-svg
+                  class="social-media-icon hvr-grow"
+                  :src="require('@/assets/icons/email.svg')"
+                  height="25"
+                  width="25"
+                ></inline-svg>
+              </a>
+              <a href="https://github.com/kzjasta">
+                <inline-svg
+                  class="social-media-icon hvr-grow"
+                  :src="require('@/assets/icons/github.svg')"
+                  height="25"
+                  width="25"
+                ></inline-svg>
+              </a>
+              <a href="https://instagram.com/smallkieran/">
+                <inline-svg
+                  class="social-media-icon hvr-grow"
+                  :src="require('@/assets/icons/instagram.svg')"
+                  height="25"
+                  width="25"
+                ></inline-svg>
+              </a>
+              <a href="https://www.linkedin.com/in/kieran-small-8b1b0a137/">
+                <inline-svg
+                  class="social-media-icon hvr-grow"
+                  :src="require('@/assets/icons/linkedin.svg')"
+                  height="25"
+                  width="25"
+                ></inline-svg>
+              </a>
             </div>
           </div>
-          <div class="tile is-parent">
+          <div class="column is-half is-hidden-mobile">
+            <img class="avatar" src="@/assets/img/me.png" />
+          </div>
+        </div>
+        <div class="columns is-hidden-mobile">
+          <div class="column is-half">
             <flag-tiles></flag-tiles>
+          </div>
+          <div class="column is-half">
             <tech-tiles></tech-tiles>
           </div>
         </div>
@@ -77,7 +87,11 @@ export default {
 
 <style lang="scss" scoped>
 .platform img {
-  border-radius: 2%;
+  border-radius: 3%;
+}
+
+.about-content {
+  padding: 2%;
 }
 
 .flag-tiles {
@@ -94,11 +108,24 @@ export default {
 
 .social-media-icon {
   margin-right: 5%;
-  fill: #eea849;
+  fill: $primary;
 }
 
-.social-media-icon:hover {
-  fill: #f46b45;
-  transition: 0.3s;
+// Mobile Portrait
+@media only screen and (max-width: 768px) {
+  .about-content {
+    margin-top: 50%;
+  }
+}
+
+// Mobile Landscrape
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .about {
+    margin-bottom: 75%;
+  }
+}
+
+// Tablet
+@media only screen and (min-width: 769) and (max-width: 1023) {
 }
 </style>

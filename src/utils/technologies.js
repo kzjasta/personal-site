@@ -1,4 +1,4 @@
-export const technologies = [
+export const technologiesArray = [
   { name: "vue", url: "https://vuejs.org/" },
   { name: "ember", url: "https://emberjs.com/" },
   {

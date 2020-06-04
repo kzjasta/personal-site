@@ -1,4 +1,4 @@
-export const countries = [
+export const countriesArray = [
   {
     name: "belgium",
     url:

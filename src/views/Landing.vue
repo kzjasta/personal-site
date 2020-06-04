@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
-        <IntroCard></IntroCard>
-      </div>
-    </div>
+    <IntroCard></IntroCard>
   </div>
 </template>
 

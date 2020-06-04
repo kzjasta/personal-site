@@ -1,5 +1,5 @@
 .platform {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 5%;
   padding-left: 12px;
   padding-right: 12px;
@@ -20,4 +20,20 @@
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
+}
+
+// Mobile Portrait
+@media only screen and (max-width: 768px) {
+  .platform {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50%;
+  }
+}
+
+// Mobile Landscrape
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .platform {
+    margin-top: 10%;
+  }
 }

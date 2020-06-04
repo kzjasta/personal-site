@@ -1,8 +1,8 @@
 <template>
-  <div class="tile is-child content">
+  <div>
     <p class="title is-size-4">...and this is the tech I use.</p>
     <sequential-entrance fromTop delay="150">
-      <a :href="tech.url" :key="tech" target="_blank" v-for="tech in technologies">
+      <a :href="tech.url" :key="i" target="_blank" v-for="(tech, i) in technologies">
         <inline-svg
           class="tech-icon hvr-grow"
           :src="require(`@/assets/icons/tech/${tech.name}.svg`)"
@@ -16,7 +16,7 @@
 
 <script>
 import InlineSvg from "vue-inline-svg";
-import { technologies } from "@/utils/technologies";
+import { technologiesArray } from "@/utils/technologies";
 
 export default {
   components: {
@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       iconSize: 60,
-      technologies: technologies
+      technologies: technologiesArray
     };
   }
 };
