@@ -12,14 +12,6 @@
               </strong>
             </p>
             <div class="social-media">
-              <a href="#">
-                <inline-svg
-                  class="social-media-icon hvr-grow"
-                  :src="require('@/assets/icons/cv.svg')"
-                  height="25"
-                  width="25"
-                ></inline-svg>
-              </a>
               <a href="mailto:me@ksmall.co">
                 <inline-svg
                   class="social-media-icon hvr-grow"
